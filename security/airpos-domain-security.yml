@@ -1,0 +1,15 @@
+generated: '2026-09-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.airpointofsale.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 29 07:42:18 2026 GMT
+  hsts: false
+domains:
+- domain: airpointofsale.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false

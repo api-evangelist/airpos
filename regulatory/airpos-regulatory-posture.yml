@@ -1,0 +1,62 @@
+generated: '2026-09-19'
+method: probed
+provider: airpos
+source: well-known/airpos-well-known.yml, security/airpos-domain-security.yml, the www.airpointofsale.com SPA bundle
+  (terms, privacy-policy routes), help.airpointofsale.com sitemap (284 URLs)
+signals: {}
+note: No horizontal regulatory signal is published. Every conventional path on www.airpointofsale.com returns the
+  same 9,379-byte SPA shell (the site has only /, /pricing, /contact, /register, /terms, /privacy-policy and /audit
+  routes). The privacy policy names AirPOS as data controller of subscriber information and gives info@airpointofsale.com
+  for access/correction requests, and the FAQ states hosting on Amazon EC2 in Dublin, Ireland, but neither is a
+  published data-subject-request process, data-residency commitment, subprocessor list, accessibility conformance
+  report, SBOM or transparency report, so no signal is recorded. The help center sitemap carries no article on any
+  of these topics.
+probes:
+- url: https://www.airpointofsale.com/accessibility
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/accessibility/vpat
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/legal/subprocessors
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/legal/dpa
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/privacy/requests
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/transparency
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/security/sbom
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/docs/data-residency
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/ai/transparency
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/legal/report-content
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/security
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page
+- url: https://www.airpointofsale.com/status
+  status: 200
+  bytes: 9379
+  note: SPA catch-all shell, not a page

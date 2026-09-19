@@ -1,0 +1,40 @@
+generated: '2026-09-19'
+method: searched
+source: https://www.airpointofsale.com/pricing
+provider: airpos
+note: >-
+  AirPOS publishes no API plans - it has no public API, developer program or API pricing. The tiers
+  below are the published pricing of the AirPOS Pay point-of-sale PRODUCT (read from the pricing route
+  of the www.airpointofsale.com single-page app, whose copy is compiled into its JS bundle), recorded
+  so a reader can see the commercial model. The software itself is free; revenue is a per-card-
+  transaction fee, with no subscription and no monthly fee.
+api_plan_count: 0
+plan_count: 2
+currency: GBP
+billing_period: per-transaction
+plans:
+- name: New Business
+  price: 1.4% + 14p per card transaction
+  currency: GBP
+  billing_period: per-transaction
+  included: Point of sale software, integrated card payments, stock control, reporting, Shopify
+    e-commerce integration, Xero integration, free support 7 days a week
+  overage: null
+  limits: []
+  note: '"Pay only a small fee per transaction, no monthly fees"'
+- name: Existing Business
+  price: From 0.8% per card transaction
+  currency: GBP
+  billing_period: per-transaction
+  included: Same platform as New Business; rate set after a free payment-cost audit
+  overage: null
+  limits: []
+  note: Rate quoted individually via the "Get a free audit" form at https://airpointofsale.com/audit
+faq_verbatim:
+- question: It's free with AirPOS Pay? How does that work?
+  answer: Our fees are typically between 1.5% - 1.99% per transaction we believe this is great value
+    for a powerful selling platform that will help you to manage and grow your business.
+free_tier: true
+free_tier_note: The POS software is free; "Don't transact? Don't pay a penny."
+trial: false
+contact_sales_only: false

@@ -1,17 +1,59 @@
 aid: airpos
-name: Airpos
-description: 'Airpos is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: AirPOS
+description: AirPOS Ltd is a Belfast, Northern Ireland software company that sells AirPOS Pay, a subscription-free
+  cloud point-of-sale, integrated card payments, stock control, reporting and e-commerce platform for independent
+  retailers in the UK and Ireland. The POS software is free and the company charges a single fee per card transaction
+  (advertised at 1.4% + 14p for new businesses, from 0.8% for existing businesses), with the platform hosted on
+  Amazon EC2 in Dublin. AirPOS ships an Android POS app and a web backoffice and integrates with Shopify, Xero,
+  SumUp and Zettle, but it publishes no public API, SDK, webhook surface or developer program of any kind; its GitHub
+  organization holds only forked infrastructure libraries. Surfaced via the API Evangelist secondary-market harvest
+  (EquityZen listing), and profiled here as a company with no public API surface.
+deliveryModel:
+  model: none
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: No delivery model - AirPOS sells an end-user POS product and ships no API, SDK or callable endpoint
+  confidence: high
+  source:
+  - well-known/airpos-well-known.yml
+  - https://github.com/AirPOS
+  - https://help.airpointofsale.com/
+  generated: '2026-09-19'
+  method: probed
+accessModel:
+  pricing: none
+  onboarding: none
+  trial: false
+  try_now: false
+  public: false
+  label: No developer access - no API, developer portal, keys or reference exists; product sign-up only
+  confidence: high
+  source:
+  - well-known/airpos-well-known.yml
+  - plans/airpos-plans-pricing.yml
+  generated: '2026-09-19'
+  method: probed
 url: https://raw.githubusercontent.com/api-evangelist/airpos/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+type: Index
+position: Producing
 specificationVersion: '0.20'
 created: '2026-09-19'
 modified: '2026-09-19'
+image: https://avatars.githubusercontent.com/u/600339?v=4
 tags:
 - Company
+- Point of Sale
+- Retail
+- Payments
+- Inventory Management
+- E-Commerce
+- United Kingdom
+- Northern Ireland
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +61,66 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/airpos-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/airpos
+  url: https://www.airpointofsale.com
+- type: Pricing
+  url: https://www.airpointofsale.com/pricing
+- type: SignUp
+  url: https://www.airpointofsale.com/register
+- type: Login
+  url: https://backoffice.airpointofsale.com/users/sign_in
+- type: Support
+  url: https://www.airpointofsale.com/contact
+- type: HelpCenter
+  url: https://help.airpointofsale.com/
+- type: Blog
+  url: https://retail.airpointofsale.com/
+- type: BlogRSS
+  url: https://retail.airpointofsale.com/rss/
+- type: TermsOfService
+  url: https://www.airpointofsale.com/terms
+- type: PrivacyPolicy
+  url: https://www.airpointofsale.com/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/AirPOS
+- type: LinkedIn
+  url: https://uk.linkedin.com/company/retail-point-of-sale
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/airpos
+- type: Plans
+  url: plans/airpos-plans-pricing.yml
+x-enrichment:
+  date: '2026-09-19'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: 'AirPOS sells an end-user POS product only: the www.airpointofsale.com SPA has just seven routes (/, /pricing,
+    /contact, /register, /terms, /privacy-policy, /audit) and its catch-all answers 200 with the same 9,379-byte
+    HTML shell for /openapi.json, /llms.txt, /developers and every /.well-known/* path; backoffice.airpointofsale.com
+    302s to a Rails sign-in and 404s /api, /openapi.json and /api-docs; the 284-URL help-center sitemap has no API,
+    webhook or developer article (integrations are Shopify/Xero/SumUp/Zettle connectors configured in the product);
+    and the GitHub org AirPOS (37 repos) holds only forked Kohana/Rails/Heroku infrastructure libraries with no
+    client, spec or SDK. The slug domain airpos.com is an unrelated parking lander.'
+  evidence:
+  - url: https://www.airpointofsale.com/openapi.json
+    status: 200
+  - url: https://www.airpointofsale.com/developers
+    status: 200
+  - url: https://backoffice.airpointofsale.com/api
+    status: 404
+  - url: https://backoffice.airpointofsale.com/openapi.json
+    status: 404
+  - url: https://help.airpointofsale.com/sitemap-posts.xml
+    status: 200
+  - url: https://api.github.com/orgs/AirPOS
+    status: 200
+  - url: https://airpos.com/
+    status: 200
+  - url: https://equityzen.com/company/airpos
+    status: 403
+  checked: '2026-09-19'

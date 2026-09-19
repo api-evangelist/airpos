@@ -1,0 +1,305 @@
+generated: '2026-09-19'
+method: probed
+source: live probes of every host the record knows (registrable domain, www, backoffice, retail blog, help center)
+  for the closed well-known path list plus /apis.json and a negative control
+hit_count: 0
+hosts:
+- host: https://airpointofsale.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/api-catalog.json
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 200 but body is (after the 301 to www) the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  soft_404_control:
+    path: /.well-known/airpos-negative-control-3f399cda.json
+    status: 200
+    content_type: text/html
+    bytes: 9379
+  path_echo_control: failed
+- host: https://www.airpointofsale.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/api-catalog.json
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /apis.json
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 200 but body is the SPA HTML shell (9379 bytes, text/html) - catch-all, not a document
+  soft_404_control:
+    path: /.well-known/airpos-negative-control-f6ffee8b.json
+    status: 200
+    content_type: text/html
+    bytes: 9379
+  path_echo_control: failed
+- host: https://backoffice.airpointofsale.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  soft_404_control:
+    path: /.well-known/airpos-negative-control-d01c7480.json
+    status: 404
+    content_type: text/html; charset=utf-8
+    bytes: 5640
+  path_echo_control: passed
+- host: https://retail.airpointofsale.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  soft_404_control:
+    path: /.well-known/airpos-negative-control-3c98c36f.json
+    status: 404
+    content_type: text/plain; charset=utf-8
+    bytes: 14
+  path_echo_control: passed
+- host: https://help.airpointofsale.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  soft_404_control:
+    path: /.well-known/airpos-negative-control-bc63fea1.json
+    status: 404
+    content_type: text/plain; charset=utf-8
+    bytes: 14
+  path_echo_control: passed
+note: No host serves any well-known document. www.airpointofsale.com is a Vite/React SPA whose catch-all route answers
+  200 with the same 9,379-byte HTML shell for every path, including the negative control; airpointofsale.com 301s
+  to www; backoffice.airpointofsale.com (Rails) 404s every path; retail. and help. (Ghost) 404 every path after
+  a trailing-slash redirect. No WellKnown or SecurityTxt pointer is emitted because nothing was served.
