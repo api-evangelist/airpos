@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/airpos/integrations
+- https://n8n.io/integrations/airpos/
+- https://composio.dev/toolkits/airpos
+- https://monid.ai/tools/airpos
+checked:
+- https://composio.dev/toolkits/airpos
+- https://monid.ai/tools/airpos
+- https://n8n.io/integrations/airpos/
+- https://zapier.com/apps/airpos/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
