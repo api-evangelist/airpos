@@ -2,13 +2,6 @@
   "repo": "airpos",
   "feeds": [
     {
-      "source": "https://help.airpointofsale.com/",
-      "feed_url": "https://help.airpointofsale.com/rss/",
-      "title": "",
-      "saved": 0,
-      "method": "discovered"
-    },
-    {
       "source": "https://retail.airpointofsale.com/",
       "feed_url": "https://retail.airpointofsale.com/rss/",
       "title": "",
@@ -16,20 +9,20 @@
       "method": "discovered"
     },
     {
-      "source": "https://help.airpointofsale.com/rss/",
-      "feed_url": "https://help.airpointofsale.com/rss/",
+      "source": "https://retail.airpointofsale.com/rss/",
+      "feed_url": "https://retail.airpointofsale.com/rss/",
       "title": "",
       "saved": 0,
       "method": "feed"
     },
     {
-      "source": "https://retail.airpointofsale.com/rss/",
-      "feed_url": "https://retail.airpointofsale.com/rss/",
+      "source": "https://help.airpointofsale.com/rss/",
+      "feed_url": "https://help.airpointofsale.com/rss/",
       "title": "",
       "saved": 0,
       "method": "feed"
     }
   ],
   "post_count": 30,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
